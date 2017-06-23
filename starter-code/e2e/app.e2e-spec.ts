@@ -1,14 +1,14 @@
-import { LabAngularDataBindingPage } from './app.po';
+import { DataBindingAngularNutritionAppPage } from './app.po';
 
-describe('lab-angular-data-binding App', function() {
-  let page: LabAngularDataBindingPage;
+describe('data-binding-angular-nutrition-app App', () => {
+  let page: DataBindingAngularNutritionAppPage;
 
   beforeEach(() => {
-    page = new LabAngularDataBindingPage();
+    page = new DataBindingAngularNutritionAppPage();
   });
 
-  it('should display message saying app works', () => {
+  it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.getParagraphText()).toEqual('Welcome to app!!');
   });
 });
