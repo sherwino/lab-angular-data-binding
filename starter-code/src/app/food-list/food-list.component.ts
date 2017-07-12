@@ -24,7 +24,7 @@ export class FoodListComponent implements OnInit {
     this.foods = foodsList;
   }
 
-  addFood(){
+  enableUserToAddFood(){
     this.isEditing = !this.isEditing;
   }
 
@@ -38,7 +38,7 @@ export class FoodListComponent implements OnInit {
 
     this.foods.unshift(newFood);
 
-    this.isEditing = false;
+    this.isEditing = true;
     this.newFoodName = "";
     this.newFoodCalories = null;
     this.newFoodImage = "";
